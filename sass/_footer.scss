@@ -1,12 +1,8 @@
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
 footer.site-footer {
-	text-align: center;
-	padding: 1rem;
-	border-top: 1px solid $light-grey;
-	color: #666;
-	font-style: italic;
-  	font-size: modular-scale(-1, 1rem, $major-third);
-}	
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid $light-grey;
+  color: #666;
+  font-style: italic;
+  font-size: modular-scale(-1, 1rem, $major-third);
+}

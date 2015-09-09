@@ -1,9 +1,6 @@
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-
 .site-header {
   border-bottom: 1px solid #eee;
+
   &-logo {
     font-family: $secondary-font;
     text-transform: uppercase;
@@ -18,12 +15,15 @@
   a {
     text-decoration: none;
     color: #000;
+
     &:hover {
       color: $accent-colour;
     }
+
   }
 
   &-nav {
+
     &-trigger {
       @extend %like-a-link;
       float: right;
@@ -32,12 +32,12 @@
         color: $accent-colour;
       }
     }
+
   }
 
   &-img {
     background-size: cover;
     width: 100%;
-
   }
 
   &-collapsed {
@@ -120,9 +120,9 @@
 }
 
 .nav-trigger {
+  @extend %like-a-link;
   display: none;
-    float: right;
-    @extend %like-a-link;
+  float: right;
   padding: 0 2rem;
 }
 
