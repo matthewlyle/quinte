@@ -14,7 +14,6 @@
 get_header(); ?>
 
 	<div>
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>

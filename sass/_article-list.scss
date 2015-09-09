@@ -1,3 +1,19 @@
 .sticky {
   background: $light-grey;
 }
+
+.posts-navigation {
+  @include outer-container();
+  max-width: 40rem;
+  padding: 0 1rem;
+
+  .nav-previous {
+    @include span-columns(6);
+  }
+
+  .nav-next {
+    @include span-columns(6);
+    text-align: right;
+  }
+
+}

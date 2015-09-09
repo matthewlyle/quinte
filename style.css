@@ -2662,6 +2662,38 @@ footer.site-footer {
   background: #eee;
 }
 
+.posts-navigation {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  padding: 0 1rem;
+}
+.posts-navigation::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.posts-navigation .nav-previous {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.posts-navigation .nav-previous:last-child {
+  margin-right: 0;
+}
+.posts-navigation .nav-next {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  text-align: right;
+}
+.posts-navigation .nav-next:last-child {
+  margin-right: 0;
+}
+
 .post-content h2, .post-content h3, .post-content h4 {
   font-family: "Montserrat", sans-serif;
 }
