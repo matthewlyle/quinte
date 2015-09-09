@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+
+.post {
+
+  &-content {
+    h2, h3, h4 {
+      font-family: $secondary-font;
+    }
+  }
+
+  &-header {
+    padding-top: 1rem;    
+  }
+
+  &-meta {
+    font-size: modular-scale(-1, 1rem, $major-third);  
+    ul {
+      padding: 0;
+      margin: 0;
+    }  
+    li {
+      display: inline;  
+      margin-right: 15px;
+      @extend %last;
+    }
+    i {
+      margin-right: 5px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+}
+
+
+
+.single-post .post-intro,
+.single-post .post-content p:first-child {
+  color: #000;
+  font-size: modular-scale(1, 1rem, $major-third);    
+  @media screen and (min-width: 650px) {
+    font-size: modular-scale(2, 1rem, $major-third);      
+  }
+}
+
+.wp-post-image {
+  margin-top: 1rem;
+}
+
+/* Single */
+
+.page,
+.single {
+  .post-header {
+    padding: modular-scale(3, 1rem, $major-third);
+    border-bottom: 1px solid $light-grey;    
+  }
+  footer.post-meta {
+    margin-bottom: 1rem;
+  }  
+}
+
+
+.posts-navigation {
+  padding: 1rem 0;
+}
+
+.page-links {
+  padding: 1rem 0;     
+}

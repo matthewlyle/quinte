@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+  border-bottom: 1px solid #eee;
+  &-logo {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: yellow;
+    padding: 5px;
+    line-height: 1;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      color: $accent-colour;
+    }
+  }
+
+  &-nav {
+    &-trigger {
+      @extend %like-a-link;
+      float: right;
+      font-size: 32px !important;
+      &:hover {
+        color: $accent-colour;
+      }
+    }
+  }
+
+  &-img {
+    background-size: cover;
+    width: 100%;
+
+  }
+
+  &-collapsed {
+    padding: 1rem 0;
+  }
+
+}
+
+.expanded-site-header {
+  @include outer-container();
+  display: none;
+  max-width: 40rem;
+  padding: 1rem;
+  @media screen and (min-width: 700px) {
+    font-size: modular-scale(-1, 1rem, $major-third);
+  }
+
+  ul {
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  #menu-all-pages {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &-widgets {
+    @media screen and (min-width: 700px) {
+      @include span-columns(6);
+      @include shift(1);
+    }
+  }
+
+  &-left {
+    @media screen and (min-width: 650px) {
+      @include span-columns(6);
+    }
+  }
+
+  &-right {
+    @media screen and (min-width: 650px) {
+      @include span-columns(6);
+    }
+  }
+
+}
+
+@mixin search-input($bg, $text) {
+  background: $bg;
+  color: $text;
+  font-size: modular-scale(-2, 1rem, $major-third);
+  padding: modular-scale(-2, 1rem, $major-third);
+  font-family: $secondary-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.search {
+  &-field {
+    @include search-input($light-grey, #333);
+    width: 70%;
+  }
+  &-submit {
+    @include search-input($dark-grey, #fff);
+    width: 22%;
+    float: right;
+    transition: .3s;
+    &:hover {
+      cursor: pointer;
+      background: darken($dark-grey, 10%)
+    }
+  }
+}
+
+.widget-title {
+  font-size: 1rem;
+}
+
+.nav-trigger {
+  display: none;
+    float: right;
+    @extend %like-a-link;
+  padding: 0 2rem;
+}
+
+/* Expanded navigation animations */
+
+.post-header,
+.site-header,
+.site-content,
+.site-footer {
+  transition: .5s;
+  transition-delay: .2s;
+}
+
+.js-nav-expanded {
+  .site-content,
+  .site-footer {
+    opacity: .3;
+    -webkit-transform: translateY(100px);
+  }
+  .site-header-nav-trigger {
+    color: $accent-colour;
+  }
+}
+
+
+
+

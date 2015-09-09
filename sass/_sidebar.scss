@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.sidebar {
+  background: $primary-colour;
+  color: #fff;
+  height: 100%; 
+  border-right: 1px solid $light-grey;
+  font-size: modular-scale(-1, 1rem, $major-third);  
+  
+  padding: modular-scale(2, 1rem, $major-third);   
+  @media screen and (min-width: 950px) {
+    padding: modular-scale(2, 1rem, $major-third) modular-scale(6, 1rem, $major-third);   
+  }
+
+  // Switch orientation
+  @media screen and (min-width: $sidebar-switch) {
+    width: $sidebar-width;  
+    position: fixed;
+    top: 0;
+    left: 0;     
+  }
+
+  &-header {
+    font-style: italic;
+  }
+
+  &-profile {
+    float: left;
+    margin-right: 15px;
+  }
+
+  &-intro {
+    margin: modular-scale(3, 1rem, $major-third) 0;
+    letter-spacing: .020rem  
+  }
+
+  &-nav {
+    display: none;
+    @media screen and (min-width: $sidebar-switch) {
+      display: block;
+    }
+  }
+
+}
+
+
+
+.sidebar {display: none;}
+
+// add to things when the sidebar is visible
+
+/* 
+
+body {
+  @media screen and (min-width: $sidebar-switch) {  
+    padding-left: $sidebar-width;  
+  }
+}
+
+*/

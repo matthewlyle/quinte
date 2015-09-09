@@ -1,0 +1,42 @@
+/*
+Theme Name: words
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: words
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+words is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+
+// Vendor
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+@import "../bower_components/fontawesome/scss/font-awesome";
+
+// Base
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'sidebar';
+
+// Homepage
+@import 'article-list';
+
+@import 'post';
+@import 'comments';
+
+// WordPress
+@import 'wordpress';
+@import 'accessibility';

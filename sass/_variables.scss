@@ -1,0 +1,33 @@
+$primary-font: 'Vollkorn', serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+$primary-colour: #3498db;
+$accent-colour: #e74c3c;
+$light-grey: #eee;
+$dark-grey: #424242;
+
+$sidebar-width: 25%;
+$sidebar-switch: 650px;
+
+$fa-font-path: 'bower_components/fontawesome/fonts';
+
+$fontPath: 'fonts/';
+
+%heading-style {
+  font-family: $primary-font;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+%like-a-link {
+  transition: color .3s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+%last {
+  &:last-child {
+    margin-right: 0;
+  }
+}

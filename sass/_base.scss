@@ -1,0 +1,146 @@
+/*--------------------------------------------------------------
+# Base 
+--------------------------------------------------------------*/
+
+html {
+  font-size: 15px;
+  @media screen and (min-width: 700px) {
+    font-size: 17px;
+  }    
+  @media screen and (min-width: 1000px) {
+    font-size: 19px;
+  }  
+  @media screen and (min-width: 1400px) {
+    font-size: 21px;
+  }
+}
+
+body {
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+  font-weight: 100;
+}
+
+p {
+  font-size: modular-scale(0, 1rem, $major-third);
+}
+
+h3 {
+    font-size: modular-scale(1, 1rem, $major-third);
+}
+
+h2 {
+  font-size: modular-scale(2, 1rem, $major-third);
+}
+
+h1,
+h3.post-title {
+  font-size: modular-scale(3, 1rem, $major-third);
+}
+
+code, pre {
+  word-wrap: break-word;
+}
+
+.container {
+  @include outer-container();
+  max-width: 40rem;
+  padding: 0 1rem;
+}
+
+a {
+  color: $accent-colour;
+  text-decoration: none;
+  transition: color .3s;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-title {
+  font-family: $primary-font;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.post-title a {
+  color: $accent-colour;
+  text-decoration: none;
+  &:hover {
+    color: #333;  
+  }
+}
+
+.home .type-post,
+.archive .type-post,
+.search .type-post {
+  padding: modular-scale(3, 1rem, $major-third);
+  border-bottom: 1px solid $light-grey;
+  .post-header {
+    border: 0;
+    padding: 0;
+  }
+}
+
+
+.page-header {
+  padding: 1rem;
+  background: $light-grey;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.post-navigation {
+  @include outer-container();
+  max-width: 40rem;
+}
+
+
+
+.post-content {
+
+  blockquote {
+    border-left: 15px solid $light-grey;
+    margin-left: 0;
+    padding-left: 1rem;    
+  }
+
+  table {
+    padding: 1rem;
+    border: 1px solid $light-grey;
+
+    @media screen and (min-width: 700px) {
+      font-size: modular-scale(-1, 1em, $major-third);      
+    }
+
+    thead {
+      font-family: $secondary-font;
+    }
+
+    td {
+      padding: modular-scale(-1, 1em, $major-third);
+    }
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+
+

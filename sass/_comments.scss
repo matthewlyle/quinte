@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+
+$comment-break: 800px;
+
+%comment-heading {
+  font-size: 1rem;
+  margin: 0;
+  background: $dark-grey;
+  padding: 1rem;
+  color: #fff;
+}
+
+%comment-box {
+  background: $light-grey;
+  padding: 1rem;
+}
+
+/* List of comments */
+
+.comments {
+  font-family: $secondary-font;
+  margin-bottom: 1rem;  
+  ol { list-style: none; }
+  p { font-size: modular-scale(-1, 1rem, $major-third); }
+}
+
+.pingback {
+  font-size: modular-scale(-2, 1rem, $major-third);
+  margin-bottom: 1rem;
+}
+
+/* Comment content */
+
+.comment {
+  font-size: modular-scale(-1, 1rem, $major-third);
+  &-author {
+    line-height: 1;
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  &-metadata {
+    font-family: $secondary-font;
+    font-size: modular-scale(-2, 1rem, $major-third);    
+    font-style: italic;
+    a {color: #777;}
+  }
+
+}
+
+.comment-list {
+  @extend %comment-box;
+  padding-bottom: 0; // to account for the margin underneath the reply link
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.comments-title {
+  @extend %comment-heading;
+}
+
+/* Add a comment */
+
+.comment-reply-title {
+    @extend %comment-heading;
+}
+
+.comment-form {
+  @extend %comment-box;  
+  label {
+    display: block;
+    font-family: $secondary-font;
+    font-weight: bold;
+    @media screen and (min-width: $comment-break) {
+      display: inline-block;
+      width: 15%;    
+    }    
+  }
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    @media screen and (min-width: $comment-break) {
+      width: 82%;
+    }
+  }
+  .comment-notes {
+    margin-top: 0;
+  }
+  .form-submit input {
+    background: #ddd;
+    width: 100%;
+    transition: .3s;
+    &:hover {
+      background: #c0c0c0;
+    }
+  }
+}
+
+
+.comments .form-allowed-tags {
+  font-size: modular-scale(-2, 1rem, $major-third);
+}
+
+.comment-reply-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#cancel-comment-reply-link {
+  color: #ccc;
+  font-size: modular-scale(-1, 1rem, $major-third);
+  margin-left: 15px;
+  font-style: italic;
+  &:hover {
+    color: #fff;
+  }
+}
