@@ -13,6 +13,13 @@
   &-meta {
     font-size: modular-scale(-1, 1rem, $major-third);
 
+    a {
+      color: #666;
+      &:hover {
+        color: #000;
+      }
+    }
+
     ul {
       padding: 0;
       margin: 0;
