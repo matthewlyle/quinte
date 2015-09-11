@@ -34,13 +34,9 @@
 
 }
 
-.single-post .post-intro,
 .single-post .post-content p:first-child {
   color: #000;
   font-size: modular-scale(1, 1rem, $major-third);
-  @media screen and (min-width: 650px) {
-    font-size: modular-scale(2, 1rem, $major-third);
-  }
 }
 
 .wp-post-image {
@@ -60,10 +56,6 @@
   }
 }
 
-.posts-navigation {
-  padding: 1rem 0;
-}
+.posts-navigation {padding: 1rem 0;}
 
-.page-links {
-  padding: 1rem 0;
-}
+.page-links {padding: 1rem 0;}

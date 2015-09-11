@@ -20,7 +20,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $secondary-font;
-  font-weight: 100;
 }
 
 p {
@@ -66,17 +65,8 @@ img {
 }
 
 .post-title {
-  font-family: $primary-font;
   margin: 0;
   line-height: 1.3;
-}
-
-.post-title a {
-  color: $accent-colour;
-  text-decoration: none;
-  &:hover {
-    color: #333;
-  }
 }
 
 .home .type-post,
