@@ -5,6 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="post-header">
 		<div class="container">
 			<div class="post-header-container">
@@ -12,12 +13,11 @@
 			</div>
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<?php include("inc/post-meta.php") ?>
-		<?php endif; ?>			
+		<?php endif; ?>
 		</div>
 	</header>
 
 	<div class="container">
-
 		<div class="post">
 			<div class="post-content">
 				<?php
@@ -34,14 +34,10 @@
 					) );
 				?>
 			</div>
-
-
-		<footer class="post-meta">
-			<?php words_entry_footer(); ?>
-		</footer>
-
+			<footer class="post-meta">
+				<?php words_entry_footer(); ?>
+			</footer>
 		</div>
-
 	</div>
 
 </article>

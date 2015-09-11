@@ -11,9 +11,9 @@
 <section class="page no-results not-found">
   <header class="post-header">
     <div class="container">
-      <h1 class="post-title"><?php _e( 'Nothing Found', 'words' ); ?></h1>      
+      <h1 class="post-title"><?php _e( 'Nothing Found', 'words' ); ?></h1>
     </div>
-  </header><!-- .page-header -->
+  </header>
 
   <div class="container">
     <div class="post-content">
