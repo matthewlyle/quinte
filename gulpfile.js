@@ -2,9 +2,9 @@ var gulp = require('gulp'),
 	plugins = require('gulp-load-plugins')({ camelize: true });
 
 gulp.task('styles', function() {
-  return gulp.src('sass/style.scss')
-	.pipe(plugins.rubySass({ style: 'expanded' }))
-	.pipe(gulp.dest('./'));
+    return gulp.src('sass/style.scss')
+      .pipe(plugins.sass({outputStyle: 'compressed'}).on('error', plugins.sass.logError))
+      .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', function() {

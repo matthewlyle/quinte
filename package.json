@@ -4,7 +4,8 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.8.9",
-    "gulp-ruby-sass": "~0.3.0",
+    "gulp-sass": "~2.0.4",
+    "gulp-sourcemaps": "~1.5.2",
     "gulp-load-plugins": "~0.7.1"
   }
 }
