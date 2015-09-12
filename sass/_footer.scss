@@ -1,8 +1,8 @@
-footer.site-footer {
+.site-footer {
+  font-size: modular-scale(-1, 1rem, $major-third);
+  color: #666;
+  font-style: italic;
   text-align: center;
   padding: 1rem;
   border-top: 1px solid $light-grey;
-  color: #666;
-  font-style: italic;
-  font-size: modular-scale(-1, 1rem, $major-third);
 }

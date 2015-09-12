@@ -3,7 +3,6 @@
 
   &-logo {
     font-family: $secondary-font;
-    text-transform: uppercase;
     font-weight: bold;
     background: yellow;
     padding: 5px;
@@ -96,23 +95,6 @@
   font-weight: bold;
   text-transform: uppercase;
   border: 0;
-}
-
-.search {
-  &-field {
-    @include search-input($light-grey, #333);
-    width: 70%;
-  }
-  &-submit {
-    @include search-input($dark-grey, #fff);
-    width: 22%;
-    float: right;
-    transition: .3s;
-    &:hover {
-      cursor: pointer;
-      background: darken($dark-grey, 10%)
-    }
-  }
 }
 
 .widget-title {
