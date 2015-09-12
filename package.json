@@ -1,6 +1,11 @@
 {
   "name": "words-theme",
   "version": "1.0.0",
+  "repository" :
+    { "type" : "git"
+    , "url" : "https://github.com/matthewlyle/theme.git"
+    },
+  "license": "GPL-2.0",
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.8.9",
