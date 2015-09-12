@@ -32,6 +32,9 @@ words is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, 
 @import 'footer';
 @import 'sidebar';
 
+// Components
+@import 'components/post-meta';
+
 // Homepage
 @import 'article-list';
 

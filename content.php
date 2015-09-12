@@ -6,20 +6,16 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<div class="container">
 	<header class="post-header">
-		<div class="container">
-			<div class="post-header-container">
-				<?php the_title( sprintf( '<h3 class="post-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
-			</div>
-		<?php if ( 'post' == get_post_type() ) : ?>
+		<?php the_title( sprintf( '<h3 class="post-header__title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+	  <?php if ( 'post' == get_post_type() ) : ?>
 			<?php include("inc/post-meta.php") ?>
-		<?php endif; ?>
-		</div>
+	  <?php endif; ?>
 	</header>
 
-	<div class="container">
-		<div class="post">
-			<div class="post-content">
+
+		<div class="post-content">
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(

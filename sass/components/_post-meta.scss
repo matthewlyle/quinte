@@ -1,0 +1,27 @@
+.post-meta {
+
+    a {
+      color: #666;
+      &:hover {
+        color: #000;
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline;
+      margin-right: 15px;
+      @extend %last;
+    }
+
+    i {
+      margin-right: 5px;
+      position: relative;
+      top: 2px;
+    }
+
+}
