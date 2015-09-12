@@ -32,6 +32,10 @@
 
     <div class="expanded-site-header">
       <div class="expanded-site-header-left">
+      <?php
+      if ( has_nav_menu('primary') ) {
+        wp_nav_menu( array( 'theme_location' => 'primary' ) );
+      } ?>
          <?php dynamic_sidebar( 'left' ); ?>
       </div>
         <section class="expanded-site-header-right">
