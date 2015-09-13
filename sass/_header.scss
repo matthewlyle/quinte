@@ -58,6 +58,10 @@
     margin-top: 0;
     padding-left: 0;
     list-style: none;
+    li {
+      margin: .25em 0;
+      padding: .25em 0;
+    }
   }
 
   #menu-all-pages {
