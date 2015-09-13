@@ -1,28 +1,29 @@
 .post-meta {
-    font-family: $primary-font;
+  font-family: $secondary-font;
+  font-size: modular-scale(-1, 1rem, $major-third);
 
-    a {
-      color: #666;
-      &:hover {
-        color: #000;
-      }
+  a {
+    color: #666;
+    &:hover {
+      color: #000;
     }
+  }
 
-    ul {
-      padding: 0;
-      margin: 0;
-    }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 
-    li {
-      display: inline;
-      margin-right: 15px;
-      @extend %last;
-    }
+  li {
+    display: inline;
+    margin-right: 15px;
+    @extend %last;
+  }
 
-    i {
-      margin-right: 5px;
-      position: relative;
-      top: 2px;
-    }
+  i {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+  }
 
 }
