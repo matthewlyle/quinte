@@ -6,20 +6,20 @@
         include("inc/post-meta.php");
       } ?>
     </header>
-    <main>
-      <section class="post-content">
-        <?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
-        <?php the_content(); ?>
-        <?php
-          wp_link_pages( array(
-            'before' => '<div class="page-links">' . __( 'Pages:', 'words' ),
-            'after'  => '</div>',
-          ) );
-        ?>
-        <footer class="post-meta">
-          <?php words_entry_footer(); ?>
-        </footer>
-      </section>
-    </main>
+
+    <section class="post-content">
+      <?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
+      <?php the_content(); ?>
+      <?php
+        wp_link_pages( array(
+          'before' => '<div class="page-links">' . __( 'Pages:', 'words' ),
+          'after'  => '</div>',
+        ) );
+      ?>
+      <footer class="post-meta">
+        <?php words_entry_footer(); ?>
+      </footer>
+    </section>
+
   </div>
 </article>

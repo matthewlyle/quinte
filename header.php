@@ -12,7 +12,7 @@
 <div class="hfeed site">
   <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'words' ); ?></a>
 
-  <header class="site-header" role="banner">
+  <header class="site-header">
 
     <div class="container">
       <div class="site-header-collapsed">
@@ -32,9 +32,9 @@
           dynamic_sidebar( 'left' );
         ?>
       </div>
-        <section class="expanded-site-header-right">
+        <div class="expanded-site-header-right">
           <?php dynamic_sidebar( 'right' ); ?>
-        </section>
+        </div>
       </div>
 
   </header>

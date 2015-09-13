@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<main role="main">
   <?php if ( have_posts() ) : ?>
   <header class="page-header">
     <div class="container">
@@ -17,6 +16,5 @@
     <?php else : ?>
     <?php get_template_part( 'content', 'none' ); ?>
   <?php endif; ?>
-</main>
 
 <?php get_footer(); ?>
