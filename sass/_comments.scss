@@ -81,6 +81,7 @@ $comment-break: 800px;
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
+    font-weight: 100;
     @media screen and (min-width: $comment-break) {
       width: 82%;
     }
