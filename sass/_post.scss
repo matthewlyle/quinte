@@ -1,5 +1,4 @@
 .post {
-  padding: modular-scale(3, 1rem, $major-third);
   border-bottom: 1px solid $light-grey;
   .sticky {background: $light-grey;}
 }
@@ -14,3 +13,7 @@
   }
 }
 
+article.page,
+article.post {
+  padding: modular-scale(3, 1rem, $major-third) 0;
+}
