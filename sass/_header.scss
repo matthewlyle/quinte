@@ -126,7 +126,8 @@
   .site-content,
   .site-footer {
     opacity: .3;
-    -webkit-transform: translateY(100px);
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
   }
   .site-header-nav-trigger {
     color: $accent-colour;
