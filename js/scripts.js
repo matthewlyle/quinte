@@ -1,21 +1,39 @@
-// Expanded header
+var quinte = {
+    init: function(){
+        quinte.nav.init();
+    }
+};
 
-function expandedHeader() {
-    var $trigger = jQuery('.site-header-nav-trigger'),
-        $expanded = jQuery('.expanded-site-header'),
-        $container = jQuery('body');
+quinte.nav = {
 
-    $trigger.click(function() {
-        $expanded.slideToggle();
-        $container.toggleClass('js-nav-expanded')
-    })
+    el: {
+        trigger: jQuery('.site-header-nav-trigger'),
+        expanded: jQuery('.expanded-site-header'),
+        container: jQuery('body')
+    },
 
-    jQuery(document).keyup(function(e) {
-        if (e.keyCode == 27) {
-            $expanded.slideUp();
-            $container.removeClass('js-nav-expanded');
+    init: function(){
+        quinte.nav.el.trigger.click(function(){
+            quinte.nav.toggle();
+        })
+        jQuery(document).keyup(function(e){
+            var e = e.keyCode;
+            quinte.nav.close(e)
+        })
+    },
+
+    toggle: function(){
+        quinte.nav.el.expanded.slideToggle();
+        quinte.nav.el.container.toggleClass('js-nav-expanded')
+    },
+
+    close: function(code){
+        if (code == 27) {
+            quinte.nav.el.expanded.slideUp();
+            quinte.nav.el.container.removeClass('js-nav-expanded');
         }
-    })
+    }
+
 }
 
-expandedHeader();
+quinte.init();
