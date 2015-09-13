@@ -8,8 +8,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('sass/*.scss', ['styles']);
-	//gulp.watch('_assets/img/**/*', ['img']);
+	gulp.watch(['sass/*.scss', 'sass/*/*.scss'], ['styles']);
 });
 
 gulp.task('default', ['watch']);
