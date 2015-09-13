@@ -12,12 +12,12 @@
       <?php the_content(); ?>
       <?php
         wp_link_pages( array(
-          'before' => '<div class="page-links">' . __( 'Pages:', 'words' ),
+          'before' => '<div class="page-links">' . __( 'Pages:', 'quinte' ),
           'after'  => '</div>',
         ) );
       ?>
       <footer class="post-meta">
-        <?php words_entry_footer(); ?>
+        <?php quinte_entry_footer(); ?>
       </footer>
     </section>
 

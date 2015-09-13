@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 <div class="hfeed site">
-  <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'words' ); ?></a>
+  <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'quinte' ); ?></a>
 
   <header class="site-header">
 
