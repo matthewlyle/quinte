@@ -84,11 +84,6 @@ img {
   margin-bottom: 0;
 }
 
-.post-navigation {
-  @include outer-container();
-  max-width: 40rem;
-}
-
 .post-content {
 
   blockquote {

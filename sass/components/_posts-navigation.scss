@@ -1,7 +1,6 @@
 .posts-navigation {
-  @include outer-container();
-  max-width: 40rem;
-  padding: 0 1rem;
+  @extend .container;
+  padding: 2rem 1rem;
 
   .nav-previous {
     @include span-columns(6);
