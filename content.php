@@ -17,7 +17,6 @@
 
 		<div class="post-content">
 				<?php
-					/* translators: %s: Name of current post */
 					the_content( sprintf(
 						__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'words' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -30,9 +29,11 @@
 					) );
 				?>
 			</div>
-			<footer class="post-meta">
-				<?php words_entry_footer(); ?>
-			</footer>
+			<!-- To-do: add back in with customizer option
+	 			<footer class="post-meta">
+					<?php words_entry_footer(); ?>
+				</footer>
+			-->
 		</div>
 	</div>
 
