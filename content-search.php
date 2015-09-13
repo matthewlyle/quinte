@@ -1,13 +1,3 @@
-<?php
-/**
- * The template part for displaying results in search pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package words
- */
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="post-header">
 		<div class="container">

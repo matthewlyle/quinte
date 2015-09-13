@@ -1,10 +1,3 @@
-<?php
-/**
- * @package words
- */
-?>
-
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="container">
     <header class="post-header post-header--single">

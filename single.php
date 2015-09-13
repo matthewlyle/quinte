@@ -1,21 +1,14 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package words
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <main role="main">
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php get_template_part( 'content', 'single' ); ?>
-		<?php
+	<?php
+    while ( have_posts() ) : the_post();
+    get_template_part( 'content', 'single' );
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
-		?>
-	<?php endwhile; ?>
+    endwhile;
+  ?>
 </main>
 
 <?php get_sidebar(); ?>

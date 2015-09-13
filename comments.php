@@ -1,17 +1,6 @@
-<?php
-/**
- * The template for displaying comments.
- *
- * The area of the page that contains both current comments
- * and the comment form.
- *
- * @package words
- */
-
-if ( post_password_required() ) {
+<?php if ( post_password_required() ) {
 	return;
-}
-?>
+}?>
 
 <div id="comments" class="comments">
 	<div class="container">

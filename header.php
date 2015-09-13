@@ -1,12 +1,4 @@
- <?php
-/**
- * The header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package words
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -33,11 +25,12 @@
     <div class="expanded-site-header">
       <div class="expanded-site-header-left">
         <h2 class="widget-title">Menu</h2>
-      <?php
-      if ( has_nav_menu('primary') ) {
-        wp_nav_menu( array( 'theme_location' => 'primary' ) );
-      } ?>
-         <?php dynamic_sidebar( 'left' ); ?>
+        <?php
+          if ( has_nav_menu('primary') ) {
+            wp_nav_menu( array( 'theme_location' => 'primary' ) );
+          }
+          dynamic_sidebar( 'left' );
+        ?>
       </div>
         <section class="expanded-site-header-right">
           <?php dynamic_sidebar( 'right' ); ?>
