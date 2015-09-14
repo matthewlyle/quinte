@@ -1,1 +1,3 @@
-Soonish-to-be free WordPress theme called quinte.
+Demo site: [http://quinte.processyellow.ca](quinte.processyellow.ca)
+
+Waiting to be added to the theme repository.
