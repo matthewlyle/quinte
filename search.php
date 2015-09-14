@@ -11,7 +11,7 @@
 				endwhile;
 				the_posts_navigation();
 			else :
-				get_template_part( 'content', 'none' ); ?>
+				get_template_part( 'content', 'none' );
 			endif; ?>
 	</section>
 
