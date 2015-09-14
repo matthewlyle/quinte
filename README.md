@@ -1,3 +1,3 @@
-Demo site: [http://quinte.processyellow.ca](quinte.processyellow.ca)
+Demo site: [quinte.processyellow.ca](http://quinte.processyellow.ca)
 
 Waiting to be added to the theme repository.
