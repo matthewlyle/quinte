@@ -1576,6 +1576,8 @@ article.page, article.post { padding: 1.95312rem 0; }
 
 #cancel-comment-reply-link:hover { color: #fff; }
 
+.bypostauthor { font-style: italic; }
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
