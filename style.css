@@ -1499,7 +1499,7 @@ img { max-width: 100%; height: auto; }
 
 .post-meta li { display: inline; margin-right: 15px; }
 
-.post-meta i { margin-right: 5px; position: relative; top: 2px; }
+.post-meta i { margin-right: 5px; }
 
 .search-field { background: #eee; color: #333; font-size: 0.64rem; padding: 0.64rem; font-family: "Montserrat", sans-serif; font-weight: bold; text-transform: uppercase; border: 0; width: 70%; }
 
