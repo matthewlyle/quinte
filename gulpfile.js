@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('styles', function() {
     return gulp.src('sass/style.scss')
-      .pipe(plugins.sass({outputStyle: 'compressed'}).on('error', plugins.sass.logError))
+      .pipe(plugins.sass({outputStyle: 'compact'}).on('error', plugins.sass.logError))
       .pipe(gulp.dest('./'));
 });
 
