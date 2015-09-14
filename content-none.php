@@ -1,7 +1,7 @@
 <section class="page no-results not-found">
-  <header class="post-header">
+  <header class="page-header">
     <div class="container">
-      <h1 class="post-title"><?php _e( 'Nothing Found', 'quinte' ); ?></h1>
+      <h1 class="page-title"><?php _e( 'Nothing Found', 'quinte' ); ?></h1>
     </div>
   </header>
 
